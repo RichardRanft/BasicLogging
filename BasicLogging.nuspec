@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>BasicLogging</id>
+        <version>2.0.0.3</version>
+        <title>BasicLogging</title>
+        <authors>SRES</authors>
+        <owners></owners>
+        <description>A basic module for logging to a file</description>
+        <releaseNotes>2.0.0.3 Released 7 May 2015 - Updates to better support logging to subfolders.</releaseNotes>
+        <summary></summary>
+        <language>en-US</language>
+        <projectUrl>http://egm-dev.ad.agi/svn/EGMTools/trunk/BasicSettings</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="System" targetFramework="net45" />
+            <frameworkAssembly assemblyName="System.Core" targetFramework="net45" />
+        </frameworkAssemblies>
+        <tags>BasicLogging</tags>
+    </metadata>
+    <files>
+        <file src="\bin\BasicLogging.dll" target="lib/net45/" />
+    </files>
+</package>
