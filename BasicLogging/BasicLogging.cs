@@ -39,11 +39,18 @@ namespace BasicLogging
             }
             try
             {
-                if(Directory.Exists(Path.GetDirectoryName(m_logFileName)))
+                String directory = "";
+                if (m_logFileName.Contains("\\"))
+                    directory = m_logFileName.Remove(m_logFileName.LastIndexOf("\\"));
+                if (directory.Length < 1)
+                    directory = ".\\";
+                else
+                    directory = ".\\" + directory;
+                if (Directory.Exists(Path.GetDirectoryName(directory)))
                     m_outputStream = new StreamWriter(m_logFileName);
                 else
                 {
-                    Directory.CreateDirectory(Path.GetDirectoryName(m_logFileName));
+                    Directory.CreateDirectory(Path.GetDirectoryName(directory));
                     m_outputStream = new StreamWriter(m_logFileName);
                 }
             }
