@@ -42,10 +42,7 @@ namespace BasicLogging
                 String directory = "";
                 if (m_logFileName.Contains("\\"))
                     directory = m_logFileName.Remove(m_logFileName.LastIndexOf("\\"));
-                if (directory.Length < 1)
-                    directory = ".\\";
-                else
-                    directory = ".\\" + directory;
+                directory = Path.GetFullPath(directory);
                 if (Directory.Exists(Path.GetDirectoryName(directory)))
                     m_outputStream = new StreamWriter(m_logFileName);
                 else
