@@ -40,6 +40,8 @@ namespace BasicLogging
             try
             {
                 String directory = "";
+                if (!m_logFileName.Contains(".\\"))
+                    m_logFileName = ".\\" + m_logFileName;
                 if (m_logFileName.Contains("\\"))
                     directory = m_logFileName.Remove(m_logFileName.LastIndexOf("\\"));
                 directory = Path.GetFullPath(directory);
