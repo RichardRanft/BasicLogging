@@ -2,12 +2,12 @@
 <package>
     <metadata>
         <id>BasicLogging</id>
-        <version>1.0.0.0</version>
+        <version>2.1.0.10</version>
         <title>BasicLogging</title>
         <authors>SRES</authors>
         <owners></owners>
         <description>A basic module for logging to a file</description>
-        <releaseNotes>1.0.0.0 Released 22 Jan 2015 - Initial release.</releaseNotes>
+        <releaseNotes>2.1.0.10 Released 24 May 2017 - Correct Stream In Use issues, simplify rollover filename generation.</releaseNotes>
         <summary></summary>
         <language>en-US</language>
         <projectUrl>http://egm-dev.ad.agi/svn/EGMTools/trunk/BasicSettings</projectUrl>
